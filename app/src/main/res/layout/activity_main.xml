@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvOutPut"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#D55151"
+    android:orientation="vertical"
+    tools:context=".SplashScreen">
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="206dp"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#D5DEFF"
+        android:text="WELLCOM TO MY APP"
+        android:textSize="34sp"
+        tools:text="Hello World" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+</LinearLayout>
