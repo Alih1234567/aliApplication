@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.PopupMenu;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,4 +34,14 @@ public class MainActivity extends AppCompatActivity {
         return true;
 
     }
+    public void showPopUpMenu(View v) {
+        PopupMenu popup = new PopupMenu(this, v);
+        popup.setOnMenuItemClickListener(new);
+        popup.inflate(R.menu.popup_menu);
+        popup.show();
+
+
+
+    }
+
 }
