@@ -36,7 +36,19 @@ public class MainActivity extends AppCompatActivity {
     }
     public void showPopUpMenu(View v) {
         PopupMenu popup = new PopupMenu(this, v);
-        popup.setOnMenuItemClickListener(new);
+        popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item)
+            {
+                if(menuItem.getItemId()==R.id.mnAddTask)
+                return false;
+            }
+            Toast.makeText(MainActivity.this, "Add",Toast.LENGTH_SHORT).show();
+        });
+    {
+
+            }
+        ;
         popup.inflate(R.menu.popup_menu);
         popup.show();
 
